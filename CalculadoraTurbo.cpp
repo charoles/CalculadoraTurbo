@@ -3,11 +3,11 @@
 
 int main(void)
 {
-        float num1, num2, resultado; 						///declaraÁ„o das variaveis.
+        float num1, num2, resultado; 						///declara√ß√£o das variaveis.
         char oper;
-        int loop, val = '=',val1 = 'c';
+        int loop, valor1 = '=',valor2 = 'c';
        
-            	printf("Calculadora Turbo\n\n");			///declaraÁ„o do nome da calculadora, as operaÁıes disponiveis.
+            	printf("Calculadora Turbo\n\n");			///declara√ß√£o do nome da calculadora, as opera√ß√µes disponiveis.
             	printf("Operacoes disponiveis\n");			
             	printf("'+' : soma\n");
             	printf("'-' : subtracao\n");
@@ -19,32 +19,32 @@ int main(void)
             
             	printf("Digite o valor: \n");				
 
-            scanf("%f",  &num1);							///o usu·rio declara o valor para iniciar a operaÁ„o.
+            scanf("%f",  &num1);							///o usu√°rio declara o valor para iniciar a opera√ß√£o.
          
         do
         {
         	
-			scanf("%s",&oper);								///o usu·rio declara a operaÁ„o.
+			scanf("%s",&oper);								///o usu√°rio declara a opera√ß√£o.
 
-			if( oper == val){								/// declara que ao clicar na tecla "=" encerra a operaÁ„o.
+			if( oper == valor1){								/// declara que ao clicar na tecla "=" encerra a opera√ß√£o.
 				printf("resultado: %.2f", resultado);		
 				return 0;
 			}
-			else if(oper == val1)
+			else if(oper == valor2)
     		{
-        		 system("cls");                             ///declara que ao clicar na tecla c apaga toda operaÁ„o.
+        		 system("cls");                             ///declara que ao clicar na tecla c apaga toda opera√ß√£o.
        			 scanf("%f",&num1);
 
    			}
 
-            else if(oper != val){							
+            else if(oper != valor1){							
             	
 			scanf("%f", &num2);								///continua calculando.
 
             	printf(" %.2f %c %.2f = ", num1,oper,num2);
             	
 
-            switch( oper )									///declara as operaÁıes[+ , - , * , / ].
+            switch( oper )									///declara as opera√ß√µes[+ , - , * , / ].
             {
                 case '+':
 						resultado = num1 + num2;
@@ -70,7 +70,7 @@ int main(void)
         	}
     							}
 					   
-        }while(num1= resultado);							///traz o resultado da operaÁ„o e retorna para prÛxima operaÁ„o atÈ o usu·rio finalizar.
+        }while(num1= resultado);							///traz o resultado da opera√ß√£o e retorna para pr√≥xima opera√ß√£o at√© o usu√°rio finalizar.
 
 return 0;
 }
